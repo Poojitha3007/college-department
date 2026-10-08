@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer Engineering</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #fff7ed;
+            color: #292524;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #7c2d12, #c2410c);
+            color: white;
+            padding: 55px 9%;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .label {
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: #fed7aa;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 18px 0;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            max-width: 700px;
+            line-height: 1.8;
+            color: #ffedd5;
+        }
+
+        .quick-bar {
+            background: #292524;
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            padding: 22px;
+        }
+
+        .quick-item {
+            text-align: center;
+        }
+
+        .quick-item strong {
+            display: block;
+            color: #fb923c;
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        .main {
+            width: 82%;
+            max-width: 1150px;
+            margin: 45px auto;
+        }
+
+        .welcome {
+            margin-bottom: 35px;
+        }
+
+        .welcome h2 {
+            font-size: 30px;
+            color: #9a3412;
+            margin-bottom: 12px;
+        }
+
+        .welcome p {
+            line-height: 1.8;
+            color: #57534e;
+            max-width: 900px;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 25px;
+        }
+
+        .panel {
+            background: white;
+            border: 1px solid #fed7aa;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(124, 45, 18, 0.08);
+        }
+
+        .panel h3 {
+            color: #c2410c;
+            margin-bottom: 20px;
+            font-size: 21px;
+        }
+
+        .program {
+            padding: 16px;
+            margin-bottom: 12px;
+            background: #fff7ed;
+            border-radius: 10px;
+            border-left: 4px solid #f97316;
+        }
+
+        .program strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .program span {
+            color: #78716c;
+            font-size: 14px;
+        }
+
+        .faculty-member {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid #eee7df;
+        }
+
+        .faculty-member:last-child {
+            border-bottom: none;
+        }
+
+        .avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #fed7aa;
+            color: #9a3412;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .faculty-member small {
+            color: #78716c;
+        }
+
+        .labs {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .lab {
+            background: #292524;
+            color: white;
+            padding: 25px 18px;
+            border-radius: 12px;
+            min-height: 120px;
+        }
+
+        .lab h4 {
+            color: #fb923c;
+            margin-bottom: 9px;
+        }
+
+        .lab p {
+            font-size: 13px;
+            color: #d6d3d1;
+            line-height: 1.5;
+        }
+
+        .contact {
+            margin-top: 30px;
+            background: #ffedd5;
+            border-radius: 16px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .contact h3 {
+            grid-column: 1 / -1;
+            color: #9a3412;
+        }
+
+        .contact-box strong {
+            display: block;
+            margin-bottom: 7px;
+            color: #c2410c;
+        }
+
+        .contact-box p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #57534e;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #292524;
+            color: #a8a29e;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            h1 {
+                font-size: 35px;
+            }
+
+            .quick-bar {
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .sections,
+            .contact {
+                grid-template-columns: 1fr;
+            }
+
+            .labs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="label">COLLEGE ACADEMIC PORTAL</div>
+
+            <h1>
+                Department of<br>
+                Computer Engineering
+            </h1>
+
+            <p>
+                Building future-ready engineers through strong technical
+                foundations, practical education, research and innovation.
+            </p>
+        </div>
+    </header>
+
+    <section class="quick-bar">
+        <div class="quick-item">
+            <strong>12+</strong>
+            Faculty
+        </div>
+
+        <div class="quick-item">
+            <strong>5</strong>
+            Programs
+        </div>
+
+        <div class="quick-item">
+            <strong>6</strong>
+            Laboratories
+        </div>
+
+        <div class="quick-item">
+            <strong>2026</strong>
+            Academic Year
+        </div>
+    </section>
+
+    <main class="main">
+
+        <section class="welcome">
+            <h2>Welcome to Our Department</h2>
+
+            <p>
+                The Department of Computer Engineering provides an environment
+                where students learn computing concepts, develop practical
+                engineering skills and work on innovative solutions to
+                real-world problems. Our academic activities combine classroom
+                learning with laboratory practice, projects and research.
+            </p>
+        </section>
+
+        <div class="sections">
+
+            <section class="panel">
+                <h3>Academic Programs</h3>
+
+                <div class="program">
+                    <strong>M.Tech Software Engineering</strong>
+                    <span>Advanced software design, development and testing</span>
+                </div>
+
+                <div class="program">
+                    <strong>Artificial Intelligence</strong>
+                    <span>Machine learning, deep learning and intelligent systems</span>
+                </div>
+
+                <div class="program">
+                    <strong>Data Engineering</strong>
+                    <span>Data processing, analytics and database technologies</span>
+                </div>
+
+                <div class="program">
+                    <strong>Cybersecurity</strong>
+                    <span>Network security, secure systems and ethical practices</span>
+                </div>
+
+                <div class="program">
+                    <strong>Cloud Computing</strong>
+                    <span>Distributed systems, containers and cloud platforms</span>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h3>Faculty Directory</h3>
+
+                <div class="faculty-member">
+                    <div class="avatar">AR</div>
+                    <div>
+                        <strong>Dr. Ananya Rao</strong><br>
+                        <small>Professor & Head of Department</small>
+                    </div>
+                </div>
+
+                <div class="faculty-member">
+                    <div class="avatar">VK</div>
+                    <div>
+                        <strong>Dr. Vivek Kumar</strong><br>
+                        <small>Associate Professor</small>
+                    </div>
+                </div>
+
+                <div class="faculty-member">
+                    <div class="avatar">SN</div>
+                    <div>
+                        <strong>Dr. Sneha Nair</strong><br>
+                        <small>Assistant Professor</small>
+                    </div>
+                </div>
+
+                <div class="faculty-member">
+                    <div class="avatar">RM</div>
+                    <div>
+                        <strong>Dr. Rahul Menon</strong><br>
+                        <small>Assistant Professor</small>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="panel" style="margin-top:25px;">
+            <h3>Department Laboratories</h3>
+
+            <div class="labs">
+
+                <div class="lab">
+                    <h4>AI Lab</h4>
+                    <p>Machine learning, neural networks and intelligent applications.</p>
+                </div>
+
+                <div class="lab">
+                    <h4>Cloud Lab</h4>
+                    <p>Cloud infrastructure, virtualization and distributed computing.</p>
+                </div>
+
+                <div class="lab">
+                    <h4>DevOps Lab</h4>
+                    <p>Continuous integration, containers and deployment automation.</p>
+                </div>
+
+                <div class="lab">
+                    <h4>Security Lab</h4>
+                    <p>Cybersecurity, network protection and secure application testing.</p>
+                </div>
+
+                <div class="lab">
+                    <h4>Software Lab</h4>
+                    <p>Software development, testing and project-based learning.</p>
+                </div>
+
+                <div class="lab">
+                    <h4>Data Lab</h4>
+                    <p>Database systems, analytics and data engineering applications.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact">
+
+            <h3>Department Contact</h3>
+
+            <div class="contact-box">
+                <strong>Location</strong>
+                <p>School of Computing<br>Academic Block B</p>
+            </div>
+
+            <div class="contact-box">
+                <strong>Email</strong>
+                <p>computerengineering@university.edu</p>
+            </div>
+
+            <div class="contact-box">
+                <strong>Phone</strong>
+                <p>+91 44 2345 6789</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Department of Computer Engineering | College Department Information Portal
+    </footer>
+
+</body>
+</html>
